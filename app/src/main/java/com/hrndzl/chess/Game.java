@@ -2,8 +2,8 @@ package com.hrndzl.chess;
 
 public class Game {
     Board gameBoard = new Board();
-    Pawn blackPawns[];
-    Pawn whitePawns[];
+    Pawn[] blackPawns;
+    Pawn[] whitePawns;
 
     public void generateBlackPawns() {
         for (int i = 0; i<8;i++) {
@@ -14,6 +14,7 @@ public class Game {
     public void generateWhitePawns() {
         for (int i = 0; i<8;i++) {
             whitePawns[i] = new Pawn("Pawn", gameBoard.board[6][i], "white");
+            whitePawns[i].getLocation();
         }
     }
 

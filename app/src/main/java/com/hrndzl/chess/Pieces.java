@@ -14,7 +14,7 @@ public abstract class Pieces {
         return this.location;
     }
 
-    public void setLocation() {
+    public void setLocation(String newLocation) {
 
     }
 }
