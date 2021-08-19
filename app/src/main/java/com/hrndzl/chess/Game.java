@@ -1,5 +1,5 @@
 package com.hrndzl.chess;
-
+// add more functionality to this sh*t
 public class Game {
     Board gameBoard = new Board();
     Pawn[] blackPawns;
