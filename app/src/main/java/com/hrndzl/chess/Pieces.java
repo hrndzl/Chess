@@ -1,12 +1,14 @@
 package com.hrndzl.chess;
 
 public abstract class Pieces {
-    private final String name, color;
-    private String location;
+    public final String color;
+    public String location;
+    public int currentRow, currentColumn;
 
-    public Pieces(String name, String location, String color) {
-        this.name = name;
+    public Pieces(String location, int currentRow, int currentColumn, String color) {
         this.location = location;
+        this.currentRow = currentRow;
+        this.currentColumn = currentColumn;
         this.color = color;
     }
 
@@ -15,6 +17,7 @@ public abstract class Pieces {
     }
 
     public void setLocation(String newLocation) {
-
+        this.location = newLocation;
     }
+
 }

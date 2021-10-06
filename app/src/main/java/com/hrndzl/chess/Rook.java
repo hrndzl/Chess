@@ -1,7 +1,7 @@
 package com.hrndzl.chess;
 
 public class Rook extends Pieces {
-    public Rook(String name, String location, String color) {
-        super(name, location, color);
+    public Rook(String location, int currentRow, int currentColumn, String color) {
+        super(location, currentRow, currentColumn, color);
     }
 }
